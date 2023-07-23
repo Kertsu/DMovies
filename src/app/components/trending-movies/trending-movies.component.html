@@ -1,0 +1,15 @@
+<div class="container-fluid mt-3 p-3">
+  <div class="row">
+    <h5 class="text-white">Trending Movies</h5>
+    <div class="poster d-flex">
+      <ng-container *ngFor="let movie of trendingMoviesResult">
+        <img
+          src="https://image.tmdb.org/t/p/original/{{ movie.poster_path }}"
+          class="px-1 rounded"
+          alt="..."
+          routerLink="movie/{{ movie.id }}"
+        />
+      </ng-container>
+    </div>
+  </div>
+</div>

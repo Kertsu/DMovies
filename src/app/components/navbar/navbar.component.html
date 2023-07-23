@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg fixed-top px-3" [ngStyle]="navBG">
+  <a class="navbar-brand" routerLink="">DMOVIES</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ms-auto">
+      <a
+        class="nav-item nav-link active"
+        routerLink=""
+        (click)="onDropdownItemClick()"
+        >Home <span class="sr-only">(current)</span></a
+      >
+      <a
+        class="nav-item nav-link"
+        routerLink="search"
+        (click)="onDropdownItemClick()"
+        >Search</a
+      >
+    </div>
+  </div>
+</nav>

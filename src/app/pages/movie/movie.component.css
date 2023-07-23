@@ -1,0 +1,37 @@
+.background-image{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    filter: brightness(.55);
+}
+
+.details-holder{
+    width: 35%;
+    z-index: 2;
+    position:absolute;
+    color: white;
+    bottom: 55%;
+    transform: translate(10%, 50%);
+}
+
+.details-holder h1{
+    font-family: fantasy;
+}
+
+button{
+    background-color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: red !important;
+}
+
+button:hover a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

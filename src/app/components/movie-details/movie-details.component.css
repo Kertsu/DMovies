@@ -1,0 +1,14 @@
+.carousel-caption h2{
+    color: #E50914;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 4rem;
+}
+
+.carousel-caption p{
+    color: white;
+}
+
+.carousel-caption{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.022), rgba(0, 0, 0, 0.069), rgba(0, 0, 0, 0.022));
+}

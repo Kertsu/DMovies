@@ -1,0 +1,38 @@
+<div
+  class="container mt-5 d-flex justify-content-center align-items-center p-5"
+>
+  <input
+    type="text"
+    class="mb-3"
+    placeholder="Search movies here..."
+    [(ngModel)]="searchQuery"
+    (input)="onSearch()"
+  />
+</div>
+<div class="row mt-2">
+  <ng-container *ngFor="let movie of movies">
+    <div class="col" *ngIf="movie.poster_path">
+      <div class="movie-holder">
+        <div class="card mb-2" style="width: 13rem">
+          <img
+            src="https://image.tmdb.org/t/p/original/{{ movie.poster_path }}"
+            class="card-img-top"
+            alt="..."
+            [routerLink]="['/movie', movie.id]"
+          />
+          <div class="card-body">
+            <div class="px-2">
+              <div class="d-flex">
+                <p class="date-holder">{{ movie.release_year }}</p>
+                <p class="language-holder fw-bold text-gray">
+                  {{ movie.original_language }}
+                </p>
+              </div>
+              <p class="title-holder">{{ movie.title }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

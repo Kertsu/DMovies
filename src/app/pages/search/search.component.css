@@ -1,0 +1,36 @@
+div{
+    margin: 0 auto;
+}
+
+div>input{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 4px;
+}
+
+.image-holder img{
+    max-height: 150px;
+}
+
+.date-holder{
+    margin-right: 4px ;
+}
+
+.card-body{
+    font-size: 13px;
+    padding: 2px !important;
+    margin: 0 !important;
+}
+
+.title-holder{
+    font-weight: bold;
+}
+
+.card-body>div{
+    margin: 0;
+}
+
+.card{
+    height: 430px;
+    cursor: pointer;
+}

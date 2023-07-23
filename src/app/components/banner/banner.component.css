@@ -1,0 +1,16 @@
+.carousel-inner{
+    height: 700px;
+}
+
+.carousel-inner .carousel-item img{
+    height: 700px;
+    object-fit: cover;
+}
+
+#banner{
+    padding: 0 !important;
+}
+
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: invert(0) grayscale(100);
+}

@@ -1,0 +1,10 @@
+.navbar .navbar-brand,
+.navbar-nav .nav-link{
+    color: #E50914;
+    font-weight: bold;
+}
+
+nav{
+    transition: background-color 0.3s ease;
+}
+

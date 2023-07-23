@@ -1,0 +1,22 @@
+<div>
+  <img
+    class="background-image"
+    src="https://image.tmdb.org/t/p/original/{{ movie.backdrop_path }}"
+    alt=""
+  />
+  <div class="details-holder">
+    <h1 class="text-lg">
+      {{ movie.title }}
+    </h1>
+    <p>
+      {{ movie.overview }}
+    </p>
+    <button class="btn">
+      <a
+        href="https://www.themoviedb.org/video/play?key={{ movieVideo }}"
+        target="_blank"
+        ><i class="fa fa-play"></i> Watch</a
+      >
+    </button>
+  </div>
+</div>
